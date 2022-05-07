@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Omema - Web Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/fav.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="assets/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span>Omemai</span>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="getstarted scrollto" href="assets/img/Omema.pdf"  target="_blank">Resume</a></li>
+        </ul>
+        <i class="bi bi-text-right mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+    <div class="btns_wrap">
+      <a href="tel:03337043892" class="call_wrap sea-bg">
+        <span class="icoo sea-bg"><i class="bi bi-whatsapp"></i></span>
+        <span>03337043892 </span>
+        </a>
+        <a href="mailto:uir791@gmail.com" class="chat_wrap sea-bg" onclick="setButtonURL();">
+        <span class="icoo sea-bg"><i class="bi bi-envelope-fill"></i></span>
+        <span>Email me</span>
+        </a>
+      </div>
+  </header>
+<!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container zindex position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8 align-self-center">
+          <h1>Hi, I'm<span> Omema </span></h1>
+          <h2>I'm a Web Developer, I combine my creative skills with technical know-how to bring graphics, animations and visual effetcs to life.
+            Take a look at my portfolio below, if you think I’d be a good match send me an email.
+          </h2>
+          <div class="mt-3">
+            <a class="hbtn1" href="mailto:uir791@gmail.com">Let's Talk</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative align-self-center" data-aos="zoom-in" data-aos-delay="200">
+         <img src="assets/img/pro1.png" class="img-fluid" alt="" data-aos="zoom-out-left">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+  
+  <main id="main">
+     <!-- ======= Events Section ======= -->
+     <section id="events" class="events">
+      <div class="container-fluid" data-aos="fade-up">
+         <div class="section-title">
+          <h2>Recent<span> Work</span></h2>
+        </div>
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/slider/abstract.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <img src="assets/img/slider/century.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/slider/agl.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <img src="assets/img/slider/blog.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/slider/kali.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <img src="assets/img/slider/webrushmore.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+<!-- End Events Section -->
+
+<!-- About me-->
+<section class="about-me" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 pp align-self-center">
+        <div class="section-title">
+          <h2>About<span> Me</span></h2>
+        </div>
+      <p class="mb-2 py-3">
+       Hello, my name is <span class="textspan">Omema Irfan</span>. I'm a  <span class="textspan">software engineer</span> specialize in  <span class="textspan">Frontend development</span>. My interest in web development started back in 2019 when I decided to try editing custom behance themes. I used to develop websites in my free time to polish my skills.</p>
+       <p>Fast-forward to today, I’ve had the privilege of working at PPC, academic, blogs, and ecommerce websites. My websites are primarily hand-coded using HTML5, CSS3, JavaScript & Bootstrap. I am dedicated to building easy-to-use, mobile-friendly websites, and applications. What I love about web development is that I can combine my knowledge of arts and psychology in creating unique designs. </p>
+       <p> ALWAYS IN LOVE WITH CODE AND DESIGN, I LIKE TO LEARN NEW THINGS EVERY DAY AND CHALLENGE MYSELF WITH NEW PROJECTS, TRANSLATING CONCEPTS INTO VISUAL DESIGN BY PAYING CLOSE ATTENTION TO DETAILS, AND CONVERT IT INTO HIGHLY INTERACTIVE EXPERIENCES.</p>
+     
+       <div class="container skills" data-aos="zoom-out-right">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="assets/img/html.png" class="img-skills" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="assets/img/css.png" class="img-skills" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="assets/img/javascript.png" class="img-skills" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <img src="assets/img/bootstrap.png" class="img-skills" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="assets/img/wp.png" class="img-skills" alt="">
+          </div>
+          <div class="col-md-2">
+            <img src="assets/img/elementor.png" class="img-skills" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- About me-->
+
+<!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>My<span> Work</span></h2>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-custom">Custom Coding</li>
+              <li data-filter=".filter-wp">WordPress</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/9cdigital.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/9cdigital.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://9cdigital.com/custom-logo-design/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/academicbird2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/academicbird2.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="http://academicbird.co.uk/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/uktopacademic-co-ukc.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/uktopacademic-co-uk.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://uktopacademic.co.uk/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/seo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/seo.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://assignmentfest.co.uk/testing/mac13/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/logoabstract.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/logoabstract.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="http://logoabstract.com/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/assignmentfest-co-uk.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/assignmentfest-co-uk.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="https://www.assignmentfest.co.uk/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/smallp/logocentury.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <div class="portfolio-links">
+                    <a href="assets/img/portfolio/logocentury.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                    <a href="https://logocentury.com/custom-logo-design/" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-wp">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/aglafrica.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/aglafrica.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="https://aglafrica.com/services/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/glasgowdigitial-custom-web-design.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/glasgowdigitial.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://glasgowdigitial.com/custom-web-design/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/webrushmore.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/webrushmore.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://webrushmore.com/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-custom">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/smallp/academichelpmate.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/academichelpmate.webp" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="https://academichelpmate.com/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+<!-- End Portfolio Section -->
+
+      <!-- GALLERY AREA START -->
+      <section id="gallery">
+        <div class="container">
+            <div class="row header-text text-center">
+              <div class="section-title">
+                <h2>Creative<span> Innerpages</span></h2>
+              </div>
+      
+            </div>
+            <div class="row gallery-pa" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="col-lg-10 m-auto">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-12 col-sm-6 col-12 gallery-img">
+                            <img src="assets/img/gallery/animate2.png" alt="gallary-img" class="img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 g-2 col-12 mob-mar-top gallery-img tab-view-hide">
+                            <img src="assets/img/gallery/seagreen.png" alt="gallary-img" class="img-fluid sp-img2">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 gallery-img g-mar sm-gallery-top">
+                            <img src="assets/img/gallery/vector.png" alt="gallary-img" class="img-fluid">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 gallery-img g-mar">
+                            <img src="assets/img/gallery/assignmentdocs.png" alt="gallary-img" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 gallery-img g-mar sm-gallery-top2">
+                            <img src="assets/img/gallery/animate.png" alt="gallary-img" class="img-fluid w-100 sp-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GALLERY AREA ENDS -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="footer-info">
+              <div class="social-links mt-3">
+                <a href="https://www.behance.net/umemairfan" class="behance"><i class="bi bi-type-bold"></i></a>
+                <a href="https://www.linkedin.com/in/omema-irfan-0b126a1b7/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-6 col-md-6  col-sm-6 footer-info social-links mt-3 justify-content-center align-self-center">
+             <h3>All copyrights reserved | OMEMA IRFAN</h3>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
