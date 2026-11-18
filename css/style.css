@@ -1,3 +1,11 @@
+/* Satoshi (Fontshare). Must stay the first rule in the file. */
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap");
+
+:root{
+    --font-main: "Satoshi-Variable", "Satoshi", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+    --bs-body-font-family: var(--font-main);
+}
+
 /* ==========================================================================
    1. RESET & BASE STYLES
    ========================================================================== */
@@ -8,13 +16,13 @@
 }
 
 body{
-    font-family: 'Lexend', sans-serif;
+    font-family: var(--font-main);
     background: #efefef;
     overflow-x: hidden;
 }
 
-a, h1, h2, h3, h4, h5, h6, span, li{  
-    font-family: 'Lexend', sans-serif;
+a, h1, h2, h3, h4, h5, h6, span, li, p, small, button{  
+    font-family: var(--font-main);
 }
 
 /* ==========================================================================
@@ -497,7 +505,7 @@ h3.hero-title-me {
     font-weight: 700;
     margin-bottom: 10px;
     color: #241010;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
 }
 
 .content-box .col-md-4 {
@@ -516,7 +524,7 @@ h1 {
     line-height: 1.8;
     font-size: 15px;
     color: #5c514b;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-main);
 }
 
 .info {
@@ -527,7 +535,7 @@ h1 {
 }
 
 .info h4, .info p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
 }
 
 .info h4 {
@@ -565,14 +573,14 @@ span.info-content {
     font-weight: 600;
     color: #222;
     white-space: nowrap;
-    font-family: 'Lexend', sans-serif;
+    font-family: var(--font-main);
 }
 
 .info small {
     color: #777;
     display: block;
     font-size: 13px !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
 }
 
 .stages p {
@@ -604,7 +612,7 @@ span.info-content {
     letter-spacing: 1.5px;
     font-weight: 600;
     color: #9a8a82;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
     margin-bottom: 24px;
 }
 
@@ -624,7 +632,7 @@ span.info-content {
     font-weight: 400;
     cursor: pointer;
     border-radius: 12px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
     transition: all 0.25s ease;
     position: relative;
     display: flex;
@@ -673,7 +681,7 @@ span.info-content {
 .about-casestudy p,
 .about-casestudy li,
 .accordion-body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
     font-size: 15px;
     color: #2d1717;
     line-height: 1.75rem;
@@ -688,11 +696,11 @@ span.info-content {
     font-weight: 700;
     margin-bottom: 15px;
     color: #241010;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
 }
 
 .accordion-button {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-main);
     font-weight: 600;
 }
 
@@ -898,7 +906,7 @@ span.info-content {
     font-size: 13px;
     }
     .about-casestudy p, .about-casestudy li, .accordion-body {
-        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-main);
         font-size: 13px;
         color: #2d1717;
         line-height: 22px;
