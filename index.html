@@ -9,35 +9,52 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- GLIGHTBOX CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-        <!-- NAVBAR -->
-    <nav class="custom-navbar">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="profile-wrap">
-          <img src="./img/cv-me.jpeg" class="profile-img">
-          <div class="brand-name"> Oméma Irfan </div>
-        </div>
-        <div class="nav-right">
-          <a href="#" class="email"> uir791@gmail.com </a>
-          <p class="social">
-            <i class="bi bi-github"></i>
-          </p>
-          <p class="social">
-            <i class="bi bi-linkedin"></i>
-        </p>
-        </div>
+    <!-- NAVBAR -->
+<nav class="custom-navbar" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <div class="profile-wrap">
+      <img src="./img/cv-me.jpeg" alt="Omema Irfan" class="profile-img">
+      <div class="brand-name">Omema Irfan</div>
+    </div>
+
+    <button
+      type="button"
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="navMenu"
+    >
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+
+    <div class="nav-right" id="navMenu">
+      <a href="#websites">Websites</a>
+      <a href="#design">Product design</a>
+      <a href="#pm">Project management</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+
+      <a href="mailto:uir791@gmail.com" class="email"><i class="bi bi-envelope-fill"></i></a>
+
+      <div class="nav-socials">
+
+        <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer" class="social" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
     <!-- HERO -->
     <section class="hero">
       <div class="hero-box">
@@ -45,745 +62,845 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <!-- LEFT -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
               <div class="hero-content">
-                <h1 class="hero-title"> Oméma Irfan </h1>
-                <h3 class="hero-title-me"><b>I build beautiful interfaces and keep projects on track.</b> </h3>
-                <p class="hero-text">Product-minded Frontend Engineer with a project management mindset. I turn ideas into meaningful digital experiences by bringing together design, development, planning, and execution. From understanding user needs and shaping interactions to writing code and tracking delivery, I take ownership of the process to build intuitive, accessible products that solve real problems and ship on time.</p>
+                <h1>I build <span class="grad">beautiful interfaces</span> and keep projects on track.</h1>
+                <p class="hero-text">Product-minded Frontend Engineer with project management mindset. I design it, code it, plan it and track it, so the work ships on time and people enjoy using it.</p>
+                <div class="btns"><a class="btn p" href="#websites">See my websites</a><a class="btn s" href="#contact">Get in touch</a></div>
               </div>
             </div>
-            <!-- RIGHT IMAGE -->
-            <div class="col-lg-5">
-              <div class="hero-image">
-                <img src="./img/cv-me.jpeg" alt="profile">
-                 <div class="board" aria-label="Interactive sprint board"><h3>Sprint board: tap a card to move it forward</h3><div class="cols" id="cols"></div><p class="hint">Tiny demo of how I think: clear stages, clear owners, no surprises.</p></div>
+            <div class="col-lg-6">
+             <div class="board" aria-label="Interactive sprint board">
+                  <h3>Sprint board: tap a card to move it forward</h3>
+                  <div class="cols" id="cols"></div>
+                  <p class="hint">Tiny demo of how I think: clear stages, clear owners, no surprises.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- CASE STUDY SECTION -->
-<section class="case-study-section">
-  <div class="container-fluid px-lg-5">
-    <div class="case-header">
-      <h2>Selected Case Studies</h2>
-      <p>Research-driven interaction projects and product case studies</p>
+
+   <!-- design -->
+    <section id="design">
+    <div class="wrap">
+        <h2 class="h">Product design</h2>
+        <p class="lead">
+            One sample case study, from research to tested prototype: a mobile checkout redesign for an online fashion
+            store.
+        </p>
+        <div class="tabs" id="dtabs" role="tablist" aria-label="Design stages">
+            <button role="tab" aria-selected="true">Research</button
+            ><button role="tab" aria-selected="false">Wireframes</button
+            ><button role="tab" aria-selected="false">UI design</button
+            ><button role="tab" aria-selected="false">Test and learn</button>
+        </div>
+        <div class="file">
+            <div class="panel dp">
+                <div class="two">
+                    <div>
+                        <b>Persona: Sara, 27</b>
+                        <p>
+                            Shops on her phone during her commute. Wants to pay in under a minute and hates retyping
+                            details.
+                        </p>
+                    </div>
+                    <div>
+                        <b>Problems found</b>
+                        <ul>
+                            <li>Checkout has 5 steps</li>
+                            <li>Forced account creation</li>
+                            <li>Shipping cost shown only at the end</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <b>Goal</b>
+                        <p>Fewer steps, no surprises, one-thumb use on a small screen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel dp" hidden>
+                <div class="phones">
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <rect x="14" y="26" width="92" height="10" rx="3" fill="var(--line)" />
+                            <rect x="14" y="48" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="52" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="64" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect x="14" y="84" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="88" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="100" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect
+                                x="14"
+                                y="186"
+                                width="92"
+                                height="20"
+                                rx="5"
+                                fill="none"
+                                stroke="var(--muted)"
+                                stroke-dasharray="4 3"
+                            /></svg
+                        >Bag
+                    </div>
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <rect x="14" y="26" width="92" height="10" rx="3" fill="var(--line)" />
+                            <rect x="14" y="48" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="52" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="64" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect x="14" y="84" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="88" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="100" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect x="14" y="120" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="124" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="136" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect
+                                x="14"
+                                y="186"
+                                width="92"
+                                height="20"
+                                rx="5"
+                                fill="none"
+                                stroke="var(--muted)"
+                                stroke-dasharray="4 3"
+                            /></svg
+                        >Delivery
+                    </div>
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <rect x="14" y="26" width="92" height="10" rx="3" fill="var(--line)" />
+                            <rect x="14" y="48" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="52" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="64" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect x="14" y="84" width="26" height="26" rx="4" fill="var(--line)" />
+                            <rect x="46" y="88" width="60" height="6" rx="3" fill="var(--line)" />
+                            <rect x="46" y="100" width="38" height="6" rx="3" fill="var(--line)" />
+                            <rect
+                                x="14"
+                                y="186"
+                                width="92"
+                                height="20"
+                                rx="5"
+                                fill="none"
+                                stroke="var(--muted)"
+                                stroke-dasharray="4 3"
+                            /></svg
+                        >Payment
+                    </div>
+                </div>
+                <p class="note">Low-fidelity layouts to agree on structure before any colour or branding.</p>
+            </div>
+            <div class="panel dp" hidden>
+                <div class="phones">
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <text x="14" y="34" font-size="11" font-weight="700" fill="var(--ink)">Your bag</text>
+                            <rect x="14" y="48" width="30" height="30" rx="6" fill="var(--soft)" />
+                            <rect x="50" y="54" width="50" height="6" rx="3" fill="var(--ink)" />
+                            <rect x="50" y="66" width="30" height="5" rx="3" fill="var(--line)" />
+                            <rect x="14" y="88" width="30" height="30" rx="6" fill="var(--soft)" />
+                            <rect x="50" y="94" width="50" height="6" rx="3" fill="var(--ink)" />
+                            <rect x="50" y="106" width="30" height="5" rx="3" fill="var(--line)" />
+                            <text x="14" y="150" font-size="9" fill="var(--muted)">Total</text>
+                            <text x="86" y="150" font-size="10" font-weight="700" fill="var(--ink)">€ 89</text>
+                            <rect x="14" y="186" width="92" height="20" rx="6" fill="var(--blue)" />
+                            <text x="60" y="200" font-size="9" font-weight="700" fill="var(--onb)" text-anchor="middle">
+                                Continue
+                            </text></svg
+                        >Bag
+                    </div>
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <text x="14" y="34" font-size="11" font-weight="700" fill="var(--ink)">Delivery</text>
+                            <rect
+                                x="14"
+                                y="46"
+                                width="92"
+                                height="20"
+                                rx="6"
+                                fill="none"
+                                stroke="var(--line)"
+                                stroke-width="1.5"
+                            />
+                            <rect x="20" y="54" width="40" height="5" rx="2" fill="var(--line)" />
+                            <rect
+                                x="14"
+                                y="74"
+                                width="92"
+                                height="20"
+                                rx="6"
+                                fill="none"
+                                stroke="var(--line)"
+                                stroke-width="1.5"
+                            />
+                            <rect x="20" y="82" width="40" height="5" rx="2" fill="var(--line)" />
+                            <rect
+                                x="14"
+                                y="102"
+                                width="92"
+                                height="20"
+                                rx="6"
+                                fill="none"
+                                stroke="var(--line)"
+                                stroke-width="1.5"
+                            />
+                            <rect x="20" y="110" width="40" height="5" rx="2" fill="var(--line)" />
+                            <rect x="14" y="140" width="40" height="14" rx="7" fill="var(--soft)" />
+                            <text x="22" y="150" font-size="8" fill="var(--blue)">Standard</text>
+                            <rect x="14" y="186" width="92" height="20" rx="6" fill="var(--blue)" />
+                            <text x="60" y="200" font-size="9" font-weight="700" fill="var(--onb)" text-anchor="middle">
+                                Continue
+                            </text></svg
+                        >Delivery
+                    </div>
+                    <div class="ph">
+                        <svg viewBox="0 0 120 220" role="img" aria-hidden="true">
+                            <rect
+                                x="3"
+                                y="3"
+                                width="114"
+                                height="214"
+                                rx="16"
+                                fill="var(--surface)"
+                                stroke="var(--line)"
+                                stroke-width="2"
+                            />
+                            <rect x="42" y="9" width="36" height="5" rx="3" fill="var(--line)" />
+                            <text x="14" y="34" font-size="11" font-weight="700" fill="var(--ink)">Pay</text>
+                            <rect x="14" y="46" width="92" height="22" rx="6" fill="var(--ink)" />
+                            <text x="60" y="61" font-size="9" fill="var(--bg)" text-anchor="middle">Apple Pay</text>
+                            <rect
+                                x="14"
+                                y="76"
+                                width="92"
+                                height="22"
+                                rx="6"
+                                fill="none"
+                                stroke="var(--line)"
+                                stroke-width="1.5"
+                            />
+                            <text x="60" y="91" font-size="9" fill="var(--ink)" text-anchor="middle">Card</text>
+                            <circle cx="60" cy="140" r="14" fill="var(--ok)" />
+                            <path d="M53 140l5 5 10-10" stroke="#fff" stroke-width="3" fill="none" />
+                            <rect x="14" y="186" width="92" height="20" rx="6" fill="var(--blue)" />
+                            <text x="60" y="200" font-size="9" font-weight="700" fill="var(--onb)" text-anchor="middle">
+                                Continue
+                            </text></svg
+                        >Payment
+                    </div>
+                </div>
+                <div class="tok">
+                    <span><i style="background: var(--blue)"></i>Primary</span
+                    ><span><i style="background: var(--coral)"></i>Accent</span
+                    ><span><i style="background: var(--ok)"></i>Success</span
+                    ><span><i style="background: var(--ink)"></i>Text</span
+                    ><span><b>Type:</b> Bricolage Grotesque + DM Sans, 8 px spacing grid</span>
+                </div>
+            </div>
+            <div class="panel dp" hidden>
+                <div class="two">
+                    <div>
+                        <b>Before</b>
+                        <ul>
+                            <li>5 steps, account required</li>
+                            <li>Shipping cost at the end</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <b>After</b>
+                        <ul>
+                            <li>3 steps, guest checkout</li>
+                            <li>Shipping cost visible in the bag</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <b>Tested and changed</b>
+                        <ul>
+                            <li>Users missed the promo field, so it moved up</li>
+                            <li>Button label changed to “Continue to payment”</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="note">
+            This is a sample case study I wrote for layout. Replace the screens with your real Figma frames and your
+            real findings.
+        </p>
     </div>
-    
-    <!-- Added Bootstrap row class here -->
-    <div class="case-wrapper row">
-      
-      <!-- CARD 1 -->
-      <!-- Added col-md-6 and mb-4 for clean spacing -->
-      <div class="col-md-6 mb-4">
-        <div class="case-study-card">
-          <div class="case-image">
-            <img src="./img/webx-dashbaord.png" alt="Scaling Governance">
+    </section>
+
+       <!-- Portfolio SECTION START -->
+      <section class="Portfolio-section" id="websites">
+        <div class="container-fluid px-lg-5">
+          <!-- TOP -->
+          <div class="d-flex justify-content-between align-items-center flex-wrap Portfolio-top mb-3">
+            <div class="portfolio-content gap-3">
+              <h2 class="Portfolio-title mb-0">Portfolio</h2>
+              <span class="Portfolio-order">↗ all recent work</span>
+            </div>
+
+            <!-- FILTERS -->
+            <div class="Portfolio-filters">
+              <button type="button" class="tab-btn active" data-filter="web">
+                Business Websites <span>11</span>
+              </button>
+              <button type="button" class="tab-btn" data-filter="ecommerce">
+                E-Commerce Website <span>13</span>
+              </button>
+            </div>
           </div>
-          <div class="case-content d-flex align-items-center justify-content-between">
-  <h3 class="mb-0">Reducing Ecommerce Complexity for Small Businesses</h3>
-  <a href="casestudy.html" class="case-btn">View Details</a>
+
+          <!-- GRID (1 row shown at a time via JS) -->
+          <div class="row g-4" id="portfolioGrid">
+            <!-- Business Websites -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/maelectricalsandgas.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/maelectricalsandgas.co.uk.webp" alt="MA Electrical and Gas website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/cleaning.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/cleaning.webp" alt="Cleaning website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/travel.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/travel.webp" alt="Travel website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/charity.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/charity.webp" alt="Charity website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/southwestdreamhouseltd.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/southwestdreamhouseltd.co.uk.webp" alt="South West Dream House website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/uktopacademic-co-uk.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/uktopacademic-co-uk.webp" alt="UK Top Academic website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/logoabstract.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/logoabstract.webp" alt="PPC website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/hac13live.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/hac13live.webp" alt="Marketing website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/logo82.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/logo82.webp" alt="PPC landing page">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/professoracademic.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/professoracademic.co.uk.webp" alt="Professor Academic website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/www.assignmentdocs.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/assignmentdocs.webp" alt="Assignment Docs website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- E-Commerce Websites -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/shoewebsite.png" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/shoewebsite.png" alt="Shoe ecommerce store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/pre-skincare.png" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/pre-skincare.png" alt="Skincare ecommerce store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/crockery.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/crockery.webp" alt="Crockery ecommerce store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/grocery-full.png" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/grocery-full.png" alt="Grocery ecommerce store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/iphones.png" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/iphones.png" alt="Online retail store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/dryfrt.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/dryfrt.webp" alt="Food ordering store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/organicproduct.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/organicproduct.webp" alt="DIY products store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/thedeardecor.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/thedeardecor.webp" alt="Home decor retail store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/sekhonamaz.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/sekhonamaz.webp" alt="Islamic products store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/food-store-v3-webx.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/food-store-v3-webx.webp" alt="Food industry store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/food.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/food.webp" alt="Food ordering website">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/jewellery.png" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/jewellery.png" alt="Jewellery retail store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+              <div class="Portfolio-card">
+                <a href="./img/portfolio/fashion-pink.webp" class="glightbox" data-gallery="portfolio-gallery">
+                  <div class="phone-frame">
+                    <div class="scroll-box">
+                      <div class="scroll-inner">
+                        <img src="./img/portfolio/fashion-pink.webp" alt="Fashion retail store">
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- CAROUSEL BAR -->
+<!-- CAROUSEL BAR -->
+<div class="portfolio-nav" id="portfolioNav" aria-label="Portfolio carousel">
+  <button type="button" class="pf-arrow" id="pfPrev" aria-label="Previous row">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+  <button type="button" class="pf-arrow" id="pfNext" aria-label="Next row">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
 </div>
         </div>
-      </div>
-      
-      <!-- CARD 2 -->
-      <div class="col-md-6 mb-4">
-        <div class="case-study-card">
-          <div class="case-image">
-            <img src="./img/jsmu.png" alt="Card Operations Platform">
-          </div>
-         <div class="case-content d-flex align-items-center justify-content-between">
-  <h3 class="mb-0">Improving Information Access Across Education, Admissions, and Diagnostic Services</h3>
-  <a href="casestudy2.html" class="case-btn">View Details</a>
-</div>
-        </div>
-      </div>
+      </section>
 
-    </div>
-  </div>
-</section>
+   <!-- PM -->
+    <section id="pm">
+      <div class="wrap">
+        <h2 class="h">Project management, in practice</h2>
+        <p class="lead">
+          Not just tool names. Here is a sample project file the way I would set it up and run it. Click through the tabs.
+        </p>
 
-    <!-- Portfolio SECTION START -->
-    <section class="Portfolio-section">
-      <div class="container-fluid px-lg-5">
-        <!-- TOP -->
-        <div class="d-flex justify-content-between align-items-center flex-wrap Portfolio-top mb-5">
-          <div class="portfolio-content d-flex align-items-center gap-3">
-            <h2 class="Portfolio-title mb-0">Portfolio</h2>
-            <span class="Portfolio-order">↗ all recent work</span>
-          </div>
-          <!-- FILTERS -->
-          <div class="Portfolio-filters">
-            <button class="tab-btn active" data-filter="web"> Business Websites <span>11</span>
-            </button>
-            <button class="tab-btn" data-filter="ecommerce"> E-Commerce Website <span>13</span>
-            </button>
-            
-          </div>
+        <div class="chips">
+          <span class="chip"><b>MS Project</b> schedules</span>
+          <span class="chip"><b>Trello</b> boards</span>
+          <span class="chip"><b>Jira</b> sprints</span>
+          <span class="chip"><b>Excel</b> budgets</span>
+          <span class="chip"><b>Teams</b> stand-ups</span>
+          <span class="chip"><b>Agile, Scrum, Kanban, Waterfall</b></span>
         </div>
-        <!-- GRID -->
-        <div class="row g-4">
-          <!-- CARD -->
-          <!----
-                  <div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/smart-section.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/smart-section.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/shoesection.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/shoesection.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/productpage.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/productpage.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/diagnosticlab.webp"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/diagnosticlab.webp"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/checkout.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/checkout.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/about.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/about.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/gamelist.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/gamelist.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/iphonecheckout.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/iphonecheckout.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div><div class="col-lg-4 col-md-6 portfolio-item" data-category="uicomponents"><div class="Portfolio-card"><a href="./img/portfolio/automation-full.png"
-                class="glightbox"
-                data-gallery="portfolio-gallery"><div class="phone-frame"><div class="scroll-box"><div class="scroll-inner"><img src="./img/portfolio/automation-full.png"></div></div></div></a><div class="card-meta"><span>SaaS</span><span>UX/UI</span><div class="date">June 7, 2025</div></div></div></div>
-    -->
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/maelectricalsandgas.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/maelectricalsandgas.co.uk.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Re-design</span>
-                <span>Elementor</span>
-                <div class="date">Sept 7, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/cleaning.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/cleaning.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Cleaning Website</span>
-                <span>Elementor</span>
-                <div class="date">May 13, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/travel.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/travel.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Travel website</span>
-                <span>HTML+Bootstrap</span>
-                <div class="date">Oct 9, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/charity.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/charity.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Charity Website</span>
-                <span>Elementor</span>
-                <div class="date">Sept 15, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/southwestdreamhouseltd.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/southwestdreamhouseltd.co.uk.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Re-design</span>
-                <span>Elementor</span>
-                <div class="date">Feb 21, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/uktopacademic-co-uk.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/uktopacademic-co-uk.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Academic Learning</span>
-                <span>Bootstrap</span>
-                <div class="date">June 16, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/logoabstract.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/logoabstract.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>PPC website</span>
-                <span>Bootstrap+JS</span>
-                <div class="date">April 2, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/hac13live.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/hac13live.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Marketing</span>
-                <span>UX/UI</span>
-                <div class="date">May 20, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/logo82.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/logo82.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>PPC</span>
-                <span>Bootstrap</span>
-                <div class="date">Sept 23, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/professoracademic.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/professoracademic.co.uk.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Academic website</span>
-                <span>Bootstrap</span>
-                <div class="date">June 5, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/www.assignmentdocs.co.uk.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/assignmentdocs.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Academic website</span>
-                <span>UX/UI</span>
-                <div class="date">July 9, 2025</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/shoewebsite.png" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/shoewebsite.png">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Skincare</span>
-                <span>Shopify</span>
-                <div class="date">April 9, 2026</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/pre-skincare.png" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/pre-skincare.png">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Skincare</span>
-                <span>Shopify</span>
-                <div class="date">April 9, 2026</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/crockery.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/crockery.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Crockery</span>
-                <span>Shopify</span>
-                <div class="date">March 11, 2026</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/grocery-full.png" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/grocery-full.png">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Grocery shop</span>
-                <span>WooCommerce</span>
-                <div class="date">Feb 7, 2026</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/iphones.png" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/iphones.png">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Online Retail</span>
-                <span>Shopify</span>
-                <div class="date">April 15, 2024</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/dryfrt.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/dryfrt.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Food ordering</span>
-                <span>WordPress</span>
-                <div class="date">Oct 9, 2025</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/organicproduct.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/organicproduct.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>DIY Products</span>
-                <span>Shopify</span>
-                <div class="date">June 7, 2025</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/thedeardecor.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/thedeardecor.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Online Retail</span>
-                <span>Shopify</span>
-                <div class="date">Nov 21, 2025</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/sekhonamaz.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/sekhonamaz.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Islamic Product </span>
-                <span>Shopify</span>
-                <div class="date">Sept 5, 2025</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/food-store-v3-webx.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/food-store-v3-webx.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Food Industry</span>
-                <span>WordPress</span>
-                <div class="date">July 9, 2025</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/food.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/food.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Food Ordering</span>
-                <span>Shopify</span>
-                <div class="date">May 20, 2024</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/jewellery.png" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/jewellery.png">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Online Retail</span>
-                <span>Shopify</span>
-                <div class="date">April 15, 2024</div>
-              </div>
-            </div>
-          </div>
-          <!-- CARD -->
-          <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
-            <div class="Portfolio-card">
-              <a href="./img/portfolio/fashion-pink.webp" class="glightbox" data-gallery="portfolio-gallery">
-                <div class="phone-frame">
-                  <div class="scroll-box">
-                    <div class="scroll-inner">
-                      <img src="./img/portfolio/fashion-pink.webp">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="card-meta">
-                <span>Online Retail</span>
-                <span>Shopify</span>
-                <div class="date">March 7, 2023</div>
-              </div>
-            </div>
-          </div>
+
+        <div class="tabs" id="pmtabs" role="tablist" aria-label="Project documents">
+          <button type="button" role="tab" aria-selected="true">Gantt</button>
+          <button type="button" role="tab" aria-selected="false">WBS</button>
+          <button type="button" role="tab" aria-selected="false">RACI</button>
+          <button type="button" role="tab" aria-selected="false">Risk register</button>
+          <button type="button" role="tab" aria-selected="false">Status report</button>
         </div>
+
+        <div class="file" id="pmfile">
+          <div class="ft">
+            <span><b>Sample project:</b> Retail website launch, 8 weeks</span>
+            <span>Documents I also prepare: charter, scope statement, change log</span>
+          </div>
+          <div id="pmview"></div>
+        </div>
+
+        <p class="note">
+          This is a sample setup, not a client project. Replace it with your real plans, or screenshots from MS Project or Trello, when you have them.
+        </p>
       </div>
     </section>
+  <!-- PM -->
 
-        <!-- SKILLS SECTION -->
-    <section class="skills-section">
-      <div class="container-fluid px-lg-5">
-        <div class="skills-header">
-          <h2> SKILLS & FOCUS AREAS </h2>
-          <p> An overview of the skills I have acquired so far. </p>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="wrap">
+            <h2 class="h">Skills</h2>
+            <p class="lead">Bars are my best guess. Edit them to your real level, because interviewers will ask.</p>
+            <div class="grid">
+                <div class="box">
+                    <h3>Frontend</h3>
+                    <div class="bar">
+                        <div>HTML, CSS, Bootstrap<span>Strong</span></div>
+                        <i><b style="width: 90%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>JavaScript<span>Good</span></div>
+                        <i><b style="width: 75%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>React.js and Angular<span>Good</span></div>
+                        <i><b style="width: 75%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Usability evaluation<span>Strong</span></div>
+                        <i><b style="width: 90%"></b></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Product & design</h3>
+                    <div class="bar">
+                        <div>Figma<span>Good</span></div>
+                        <i><b style="width: 65%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Wireframing<span>Strong</span></div>
+                        <i><b style="width: 85%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>User research<span>Good</span></div>
+                        <i><b style="width: 65%"></b></i>
+                    </div>
+                      <div class="bar">
+                        <div>Requirements gathering<span>Strong</span></div>
+                        <i><b style="width: 95%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Design systems<span>Strong</span></div>
+                        <i><b style="width: 80%"></b></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Project management</h3>
+                    <div class="bar">
+                        <div>Agile / Scrum<span>Good</span></div>
+                        <i><b style="width: 75%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>MS Project<span>Strong</span></div>
+                        <i><b style="width: 90%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Jira & Trello<span>Good</span></div>
+                        <i><b style="width: 80%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Stakeholder comms<span>Good</span></div>
+                        <i><b style="width: 75%"></b></i>
+                    </div>
+                    <div class="bar">
+                        <div>Risk planning<span>Good</span></div>
+                        <i><b style="width: 70%"></b></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skills-card">
-          <div class="row g-5">
-            <!-- COLUMN 1 -->
-            <div class="col-lg-4">
-              <h4> Interaction & Research </h4>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> UX Research </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Interface & Visual Design </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> HCI </span>
-                  <small> intermediate </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:85%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Usability Testing </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-            </div>
-            <!-- COLUMN 2 -->
-            <div class="col-lg-4">
-              <h4> Methods & Collaboration </h4>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Agile working & Scrum </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Feedback Facilitation </span>
-                  <small> very safe </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Cross-functional Collaboration </span>
-                  <small> very safe </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Responsive Design Strategy </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-            </div>
-            <!-- COLUMN 3 -->
-            <div class="col-lg-4">
-              <h4> Tools & Technology </h4>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Figma & Adobe XD </span>
-                  <small> very safe </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> HTML, CSS, JavaScript </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Bootstrap </span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:95%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-top">
-                  <span> Wordpress & Shopify</span>
-                  <small> advanced </small>
-                </div>
-                <div class="skill-line">
-                  <div style="width:90%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container-fluid px-lg-5">
-        <div class="footer-wrap">
-          <!-- LEFT -->
-          <div class="footer-left"> © 2026 Designed and Coded by Oméma Irfan. </div>
-          <!-- RIGHT -->
-          <div class="footer-right">
-            <a href="mailto:uir791@gmail.com" class="footer-mail"> uir791@gmail.com </a>
-            <p class="footer-icon">
-              <i class="bi bi-linkedin"></i>
-            </p>
-            <p class="footer-icon">
-              <i class="bi bi-github"></i>
-            </p>
-          </div>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="wrap">
+            <div class="cta">
+                <h2 class="h">Let’s work together</h2>
+                <p class="lead">
+                    Open to Frontend Product Engineer and frontend developer roles across Europe. 
+                    Remote and relocation both fine.
+                </p>
+                <a class="big" href="mailto:uir791@gmail.com">uir791@gmail.com</a>
+            </div>
         </div>
-      </div>
-    </footer>
+    </section>
+   <footer><div class="wrap">© 2026 Omema Irfan</div></footer>
+
+
     <!-- GLIGHTBOX -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-      const lightbox = GLightbox({
-        touchNavigation: true,
-        loop: true
-      });
-      const filterButtons = document.querySelectorAll(".tab-btn");
-      const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-      function filterPortfolio(filter) {
-        portfolioItems.forEach(item => {
-          const category = item.getAttribute("data-category");
-          if (filter === "all" || filter === category) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
-        });
-      }
-      /* button click */
-      filterButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          filterButtons.forEach(btn => {
-            btn.classList.remove("active");
-          });
-          button.classList.add("active");
-          const filter = button.getAttribute("data-filter");
-          filterPortfolio(filter);
-        });
-      });
-      /* DEFAULT LOAD */
-      window.addEventListener("DOMContentLoaded", () => {
-        filterPortfolio("web");
-      });
-    </script>
-    <!-- Portfolio SECTION END -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
